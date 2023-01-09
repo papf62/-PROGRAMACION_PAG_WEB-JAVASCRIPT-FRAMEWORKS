@@ -1,0 +1,16 @@
+.contenedor {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 28px;
+    background-color: rgba(197, 238, 206, 0.69);
+    border: 3px solid white;
+    border-radius: 50%;
+    max-width: 500px;
+}
+
+#formulario {
+    background-color: rgb(241, 186, 221);
+    border: 3px solid rgb(142, 44, 234);
+    border-radius: 10%;
+    max-width: 300px;
+}
