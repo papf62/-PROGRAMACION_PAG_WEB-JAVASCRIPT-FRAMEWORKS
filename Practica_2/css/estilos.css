@@ -1,0 +1,169 @@
+body {margin: 0;
+	padding: 0;
+	background-color:#8e5118;
+} 
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+}
+.swal-modal {
+    background-color: rgba(63,255,106,0.95);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.bandaSuperior{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(252, 188, 109);
+    padding: 15px;
+}
+
+.bandaSuperior img {
+    width: 50px; 
+    float: left;
+}
+.bandaSuperior h1 {
+    font-family: Nabla, Helvetica, sans-serif;
+}
+.informeT {
+    position:absolute;
+    margin-top: -20px;
+    margin-right: 0px;
+
+}
+.informe {
+    float: right;
+    display: none;
+}
+
+h1 {
+    font-weight: bold;
+    color: rgb(220, 235, 248);
+    letter-spacing: 5px;
+    
+    text-shadow: -1px -1px 10px #2196f3, 
+                  3px  3px 10px #2196f3, 
+                  6px  6px 10px #8e5118;
+    
+}
+
+marquee {
+    font-weight: bold;
+    color: rgb(179, 0, 0);
+}
+
+.ficha {height:180px;
+	position:relative; 
+	width:29%;
+	min-width:280px;
+	border:#2e7a9f 3px solid; 
+	padding:5px; 
+	margin:1%; 
+	float:left;
+	display: inline;
+	overflow:hidden;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-radius: 10px;
+	box-shadow: 8px 8px 25px 0px rgba(24,50,87,1);
+    background-color:rgb(252, 188, 109);
+    text-align: center;
+}
+.pastel{clear:both; float:left; height:180px;
+	border-radius: 5px;
+}
+.ficha h2{
+    margin:-3px; 
+    font-size:25px; 
+    font-weight:bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(154, 11, 189);
+}
+.ficha h3{
+    font-size:14px; 
+    font-weight:normal; 
+    line-height:16px;
+}
+.ficha h4{
+    font-size:10px; 
+    font-weight:normal; 
+    line-height:16px;
+    margin-top: 30px;
+}
+.separador {height:180px; width:10px; float:left;}
+.gestion{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+     text-align: right;
+}
+.carrito{
+    width: 30px; 
+    height: 30px; 
+    float: right; 
+    margin-right: 20px;
+}
+
+.ficha2 {
+	position:relative; 
+	width:60%;
+	min-width:280px;
+	border:#2e7a9f 3px solid; 
+	padding:5px; 
+	margin:1%; 
+	float:left;
+	display: inline;
+	overflow:hidden;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-radius: 10px;
+	box-shadow: 8px 8px 25px 0px rgba(24,50,87,1);
+    background-color:rgb(125, 211, 242);
+}
+.ficha2 h3{
+    font-size:14px; 
+    font-weight:normal; 
+    line-height:16px;
+}
+.ficha2 button{
+    background-color: #0d792b; 
+    font-weight:bold; 
+    color: azure;
+    line-height:16px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+.informeT2 {
+    font-weight: bold;
+}
+.compra {
+    float: right;
+}
+
+@media only screen and (max-width: 1100px) {
+    .ficha {width:46%;}
+}
+@media only screen and (max-width: 940px) {
+    .ficha {width:46%;}
+}
+@media only screen and (max-width: 770px) {
+    .ficha {width:90%; margin:3%;}
+}
+@media (max-width: 500px) {
+    h1 {
+      font-size: 16px;
+    }
+    .ficha {width:90%; margin:3%; height:150px; min-width:100px;}
+    .ficha img{height:120px;}
+    .carrito{
+        height: 30px !important; 
+    }
+    .bandaSuperior img {
+        width: 20px;
+    }
+    .informeT {
+        font-size: 10px;
+        margin-top: -10px;
+    }
+}
