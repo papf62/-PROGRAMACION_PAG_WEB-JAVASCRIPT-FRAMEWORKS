@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="es, en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <title>PAPFsteles</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/codigo.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body onload="fechaDif()">
+    
+    <div class="bandaSuperior">
+        <img src="img/logo.png" alt="logo">
+        <h1><strong>PAPF</strong>STELES</h1>
+        <div class="informeT" id="total"></div>
+        <marquee behavior="" direction="" id="aviso"></marquee>
+    </div>
+
+    <div class="ofertas">
+        
+        <div class='ficha'>
+            <img src='img/pa1.jpg' alt="Diamante de fresa" class="pastel">
+            <div class='separador'></div>
+            <h2>Diamante de fresa</h2>
+            <br>
+            <h3>120 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant1" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Diamante de fresa', 120, 'cant1')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa2.jpg' alt="Pirata de hojaldre" class="pastel">
+            <div class='separador'></div>
+            <h2>Pirata de hojaldre</h2>
+            <br>
+            <h3>30 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant2" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Pirata de hojaldre', 30, 'cant2')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa3.jpg' alt="Maracuyá individual" class="pastel">
+            <div class='separador'></div>
+            <h2>Maracuyá individual</h2>
+            <br>
+            <h3>25 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant3" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Maracuyá individual', 25, 'cant3')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa4.jpg' alt="Chupitos de canela" class="pastel">
+            <div class='separador'></div>
+            <h2>Chupitos de canela</h2>
+            <br>
+            <h3>6 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant4" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Chupitos de canela', 6, 'cant4')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa5.jpg' alt="Jardín de chocolate" class="pastel">
+            <div class='separador'></div>
+            <h2>Jardín de chocolate</h2>
+            <br>
+            <h3>80 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant5" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Jardín de chocolate', 80, 'cant5')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa6.jpg' alt="Marmol rojo" class="pastel">
+            <div class='separador'></div>
+            <h2>Marmol rojo</h2>
+            <br>
+            <h3>60 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant6" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Marmol rojo', 60, 'cant6')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa7.jpg' alt="Rayo de pistachos" class="pastel">
+            <div class='separador'></div>
+            <h2>Rayo de pistachos</h2>
+            <br>
+            <h3>130 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant7" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Rayo de pistachos', 130, 'cant7')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa8.jpg' alt="Nombre personal" class="pastel">
+            <div class='separador'></div>
+            <h2>Nombre personal</h2>
+            <br>
+            <h3>70 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant8" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Nombre personal', 70, 'cant8')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+        <div class='ficha'>
+            <img src='img/pa9.jpg' alt="Arroz con leche" class="pastel">
+            <div class='separador'></div>
+            <h2>Arroz con leche</h2>
+            <br>
+            <h3>9 €</h3>
+            <div class="gestion">
+                <h4>
+                    Cantidad:
+                    <input type="text" id="cant9" style="width: 30px; margin-top: 5px; margin-right: 10px;"> 
+                    <img src='img/carrito.png' class="carrito" onclick="Añadir('Arroz con leche', 9, 'cant9')" title="Añadir al carrito" alt="Añadir al carrito"><br>
+                </h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ficha2">
+        <h3>Detalle de compra:</h3>
+        <div id="resultado"></div>
+        <hr>
+        <div class="informeT2" id="informeT2"></div><br>
+        <hr style="height: 10px; background-color: rgb(171, 171, 241);"><br>
+        <div class="compra" id="">
+            Introduce tu códico de descuento: 
+            <input type="text" name="" id="dto">
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        
+    </div>
+        
+
+    <!-- <div class="container">
+        <h2>Venta de Productos o presentacion de articulos</h2>
+        
+        <pre>
+        Una realidad o contexto explique lo que se ofrece
+        Tener en cuenta UX seguimiento de la funcionalidad,
+        explicacion del proceso....
+        Puntuacion:
+        Encapsulacion 0.5
+        Estetica y presentacion 0.5
+        Funcionalidad 1.00
+        Entorno comercial 0.5
+        
+        -fecha de presentacion:- 20-01-2023
+        </pre>
+        <p>Requisitos de la practica</p>
+        <ul>
+        <li>Temporizacion(cuenta atrás) finaliza el dia 20-01-20023 a las 15:00</li>
+        <li>Utilizacion de algun recurso de dto con finalidad comercial</li>
+        <li>minimo 2 productos, o elementos o realidades</li>
+        <li>salida idependiente delos resultados de cada elemento o productos</li>
+        <li>Percepcion de compra, un boton comprar o .....</li>
+        </ul>
+    </div> -->
+</body>
+</html>
